@@ -1,0 +1,227 @@
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#navbar {
+    position: relative;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    transition: top 0.5s;
+}
+
+.nav-link {
+    border: 1.25px dashed #e6e6e6;
+    color: #e6e6e6;
+    width: 50%;
+    justify-content: space-around;
+    align-items: baseline;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    background-image: linear-gradient(to top, #AFEEEE 20%, #7decff 80%);
+}
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+
+#homePage {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  
+  #introduction {
+    margin-right: 50%;
+    margin-top: 3%;
+  }
+
+  #welcome {
+      font-size: 90px;
+  }
+
+  #introduction h4:first-of-type {
+      border-top: 2px solid white;
+      margin: 0 auto;
+      width: 50%;
+      padding-top: 20px;
+  }
+  
+  #contactMe {
+    margin-right: 50%;
+    margin-top: 70px;
+  }
+
+  .fa-arrow-down {
+    margin-top: 20px;
+    font-size: 50px;
+    color: white;
+  }
+
+  .fa-arrow-down:hover {
+      cursor: pointer;
+      color: rgb(236, 236, 236);
+  }
+
+  #portfolio {
+      margin-top: 700px;
+  }
+
+  #portfolio h2 {
+      color: black;
+  }
+
+  #portfolio a:hover {
+      text-decoration: none;
+  }
+
+  #portfolio h2:hover {
+      color: rgb(90, 90, 90);
+  }
+
+  #stack {
+      text-align: center;
+      margin: 0 auto;
+      width: 50%;
+  }
+
+  #stack img {
+      height: 100px;
+      width: 125px;
+      margin-top: 20px;
+  }
+
+  #extra {
+      text-align: center;
+      margin: 0 auto;
+      width: 50%;
+  }
+
+  #lightroom {
+      height: 100px;
+      width: 125px;
+  }
+
+  #visualStudio {
+    height: 100px;
+    width: 125px;
+  }
+
+#projects img {
+    border-radius: 15px;
+    border: 5px solid grey;
+    box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    height: 200px;
+    width: 400px;
+    margin-top: 150px;
+    margin-left: 25%;
+}
+
+#button {
+    background-color: rgb(0, 195, 255);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: solid white;
+}
+
+#button:hover {
+    background-color: rgb(0, 166, 216);
+}
+
+#buttonTwo {
+    background-color: white;
+    color: rgb(0, 195, 255);
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: solid rgb(0, 195, 255);
+}
+
+#buttonTwo:hover {
+    background-color: rgb(0, 195, 255);
+    border: solid white;
+    color: white;
+}
+
+#description {
+    margin-top: 125px;
+}
+
+hr {
+    margin: 0;
+    padding: 0;
+    border-color: #d6d6d6;
+}
