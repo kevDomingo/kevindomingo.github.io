@@ -1,3 +1,3 @@
 LINK
 
-https://kevdomingo.github.io/portfolio.github.io/
+https://kevdomingo.github.io/myportfolio.github.io/
